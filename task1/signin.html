@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in page</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Akshar:wght@300..700&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+    </style>
+    <style>
+      .create {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        background: #fff;
+        transform: translate(-50%, -50%);
+        padding: 0px 0px;
+        max-width: 680px;
+        width: 100%;
+        height: 440px;
+        border: 2px solid black;
+        border-radius: 10px;
+      }
+      .para {
+        border-radius: 8px 8px 0px 0px;
+        background-color: #d5eee0d8;
+        color: #008a45;
+        text-align: center;
+        padding-top: 5px;
+        margin: 0;
+        padding-bottom: 0;
+        padding-left: 20px;
+        max-width: 700px;
+        height: 38px;
+        overflow: hidden;
+      }
+
+      .hr3 {
+        border: 1px solid black;
+        width: 720px;
+        width: 100%;
+        overflow: hidden;
+        padding: 0px;
+        margin-top: 0px;
+      }
+      p {
+        width: 650px;
+        font-family: "IBM Plex Sans";
+        font-size: 13px;
+        height: 16px;
+        font-weight: 600;
+        padding-top: 5px;
+        margin: 0;
+      }
+
+      .account {
+        vertical-align: top;
+        margin-bottom: 50px;
+        top: 0%;
+        display: inline-block;
+        margin-top: 0px;
+        width: 300px;
+        height: 405px;
+        margin-left: 40px;
+        font-family: "IBM Plex Sans";
+      }
+
+      .btn1 {
+        margin-top: 10px;
+        cursor: pointer;
+        font-family: "IBM Plex Sans";
+        font-weight: 600;
+        background-color: #2f6ce5;
+        color: #ffffff;
+        border: none;
+        border-radius: 25px;
+        width: 300px;
+        height: 40px;
+        text-align: center;
+      }
+
+      .inside {
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      .first {
+        width: 130px;
+        margin-right: 0%;
+      }
+
+      .second {
+        width: 135px;
+        margin-left: 0%;
+      }
+      input {
+        background-color: hwb(0 100% 0%);
+        font-family: "IBM Plex Sans";
+        height: 30px;
+        max-width: 290px;
+        width: 280px;
+        padding-left: 5px;
+        margin-left: 5px;
+        border-style: thin;
+        border-color: #d9d9db;
+        border-width: 0.125px;
+
+      }
+
+      .btn2,
+      .btn3 {
+        font-family: "IBM Plex Sans";
+        background-color: #ffffff;
+        border: 1px solid #d9d9db;
+        cursor: pointer;
+        margin-top: 12px;
+        display: inline-block;
+        width: 300px;
+        height: 30px;
+      }
+
+      .btn3 {
+        margin-bottom: 20px;
+      }
+      .img1 {
+        vertical-align: middle;
+        height: 15px;
+      }
+
+      .signin {
+        font-family: "IBM Plex Sans";
+
+        width: 200px;
+        font-size: 15px;
+        display: inline-block;
+        margin-left: 25px;
+      }
+      .para1 {
+        margin-top: 25px;
+        font-family: "IBM Plex Sans";
+        display: inline-block;
+        width: 290px;
+        margin-bottom: 35px;
+      }
+      a{
+        color: #2f6ce5;
+      }
+      .img2{
+        width: 250px;
+        margin-left: 40px;
+      }
+
+      .para2{
+        /* margin-top: 20px; */
+        /* padding-top: 20px; */
+        font-family: "IBM Plex Sans";
+        display: inline-block;
+        margin-right: 8px;
+        margin-top: 8px;
+        width: 320px;
+        font-size: 10px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.559);
+      }
+
+      .para3{
+        font-family: "IBM Plex Sans";
+        padding: 0px;
+        display: inline-block;
+        margin-left:70px;
+        width: 300px;
+        font-weight: 800;
+        margin-bottom: 25px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="create">
+      <div class="para">
+        <p>
+          Let's learn, share & inspire each other with our passion for computer
+          engineering. Sign up now 🤘🏼
+        </p>
+      </div>
+      <hr class="hr3" />
+      <div class="account">
+        <h2>Sign In</h2>
+        <div class="inside">
+          <div class="flex">
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+          </div>
+
+
+
+          <button class="btn1">Create Account</button>
+          <button class="btn2">
+            <img
+              class="img1"
+              src="https://1000logos.net/wp-content/uploads/2017/02/Facebook-Logosu.png"
+              alt=""
+            />
+            Sign up with Facebook
+          </button>
+          <button class="btn3">
+            <img
+              class="img1"
+              src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
+              alt=""
+            />
+            Sign up with Google
+          </button>
+        <p class="para3">Forgot Password? </p>
+
+        </div>
+
+      </div>
+      <div class="signin">
+        <p class="para1">
+            Don’t have an account yet? 
+          <a href="creataccount.html">Create new for free!</a>
+        </p>
+        <img  class="img2"  src="signin.png" alt="" />
+        <p class="para2">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+      </div>
+    </div>
+  </body>
+</html>

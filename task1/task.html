@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATG WORLD</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Akshar:wght@300..700&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        font-family: "Akshar", sans-serif;
+        margin: 0;
+      }
+      p {
+        display: inline-block;
+        font-size: 30px;
+      }
+      span {
+        color: #05a857;
+      }
+
+      .header {
+        /* Rectangle 3 */
+        margin-top: 5px;
+        position: absolute;
+        width: 1440px;
+        height: 440px;
+        left: 0px;
+        top: 72px;
+        margin-bottom: 32px;
+        display: block;
+        background: fixed;
+      }
+
+      .search {
+        display: inline-block;
+        width: 360px;
+        height: 42px;
+        left: 305px;
+        top: 16px;
+        /* background-color: #f2f2f2; */
+        
+      }
+
+      .Searchbox {
+        color: #7a7a7a;
+        background-color: #f2f2f2;
+        border: none;
+        vertical-align: auto;
+        height: 35px;
+        width: 360px;
+        margin-left: 305px;
+        margin-top: 16px;
+        margin-bottom: 14px;
+        font-family: "IBM Plex Sans";
+        font-style: normal;
+        font-size: 14px;
+        line-height: 18px;
+        border-radius: 25px;
+        padding: 1.52px 1.52px;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      .imagetext {
+        position: absolute;
+        width: 378px;
+        height: 47px;
+        left: 200px;
+        top: 286px;
+        font-family: "IBM Plex Sans";
+        font-style: normal;
+        font-size: 36px;
+        line-height: 47px;
+        color: #ffffff;
+      }
+
+      .imagetext2 {
+        position: absolute;
+        width: 327px;
+        height: 23px;
+        left: 200px;
+        top: 337px;
+        font-family: "IBM Plex Sans";
+        font-style: normal;
+        font-size: 18px;
+        line-height: 23px;
+        color: #ffffff;
+      }
+
+      .content {
+        height: 72px;
+        width: 1440px;
+      }
+
+      .logo {
+        margin-left: 72px;
+        margin-top: 18px;
+        margin-bottom: 24px;
+        display: inline-block;
+      }
+
+      .img {
+        filter: brightness(50%);
+      }
+
+      .free {
+        display: inline-block;
+        margin-left: 261px;
+        font-size: 16px;
+      }
+      .para {
+        font-family: "IBM Plex Sans";
+        font-weight: 400;
+        display: inline-block;
+        height: 183px;
+        height: 21px;
+        margin-left: 261px;
+        font-size: 18px;
+        vertical-align: top;
+      }
+
+      a {
+        color: #2f6ce5;
+        font-weight: 550;
+      }
+      .about {
+        margin-top: 25px;
+        margin-left: 200px;
+        width: 358px;
+        display: inline-block;
+        vertical-align: bottom;
+      }
+      .about-us1,
+      .about-us {
+        font-size: 16px;
+        margin-right: 20px;
+        text-decoration: none;
+      }
+      .about-us {
+        color: #8a8a8a;
+      }
+
+      .hr1{
+        width: 1040px;
+        height: 0px;
+        margin-top: 18px;
+        margin-left: 200px;
+        /* border: 1px solid #E0E0E0; */
+      }
+      .post {
+        display: inline-block;
+        margin-left: 435px;
+      }
+
+      .btn1 {
+        height: 40px;
+        width: 110px;
+        margin-top: 30px;
+        border-radius: 6px;
+        padding: 3px 3px;
+        font-family: "IBM Plex Sans";
+        color: black;
+        font-weight: 600;
+        border: none;
+        vertical-align: text-bottom;
+      }
+      .btn2 {
+        color: white;
+        height: 40px;
+        width: 110px;
+        margin-top: 30px;
+        background-color: #2f6ce5;
+        border-radius: 6px;
+        font-family: "IBM Plex Sans";
+        border: none;
+        margin-left: 16px;
+        vertical-align: text-bottom;
+      }
+
+      .colum {
+        display: inline-block;
+        margin-left: 200px;
+        width: 692px;
+      }
+      h5 {
+        width: 600px;
+        height: 25px;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 30px;
+        margin-bottom: 15px;
+        display: inline-block;
+
+      }
+      .small{
+        font-size: 23px;
+        line-height: 30px;
+        color: #5c5c5c;
+      }
+      .colum-about{
+        margin-bottom: 15px;
+        margin-left: 20px;
+        padding: 15px 10px;
+      }
+      .colum,.colum1{
+        border-width: thin;
+        border-style: solid;
+        border-color: #e0e0e0;
+      }
+      .colum{
+        margin-top: 15px;
+        display: inline-block;
+      }
+      .colum1{
+        margin-top: 25px;
+      }
+      h3{
+        font-weight: 550;
+        margin-bottom: 15px;
+        color: #000000;
+        margin-top: 10px;
+      }
+
+      .colum-about2{
+        margin-left: 20px;
+        margin-top: 30px;
+        font-family: "IBM Plex Sans";
+        font-weight: 550;
+      }
+      .profile,.profile1{
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 15px;
+      }
+      .profile1{
+        font-size: 20px;
+        margin-left: 9px;
+      }
+
+      .btn3{
+        display: inline;
+        margin-left: 20px;
+      }
+
+      .right-side{
+        margin-left: 300px;
+        font-size: 18px;
+        font-weight: 500;
+        display: inline-block;
+        vertical-align: middle;
+        color: #525252;
+        
+      }
+
+      .img4{
+        vertical-align: middle;
+        margin-left: 20px;
+        width: 45px;
+      }
+
+      .middle1,.middle2{
+        font-family: "IBM Plex Sans";
+        vertical-align: top;
+        font-size: 15px;
+        font-weight: 600;
+      }
+
+      .middle2{
+        margin-left: 45px;
+      }
+      .calendar{
+        vertical-align: bottom;
+        margin-top: 1px;
+      }
+
+      .green,.orange{
+        border: 1px solid black;
+        border-radius: 8px;
+        padding-top: 8px;
+        padding-bottom: 5px;
+        font-weight: 500;
+        width: 652px;
+        height: 28px;
+        margin-top: 10px;
+        display: block;
+        text-align: center;
+        font-size: 16px;
+      }
+
+      .orange{
+        color: #e56135;
+      }
+
+      .green{
+        color: #02b875;
+      }
+      .colum2{
+        margin-bottom: 100px;
+      }
+      .locationup{
+        /* vertical-align: middle; */
+
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 60px;
+        margin-left: 140px;
+        border: none;
+      }
+
+      .locationup2{
+        vertical-align: top;
+        font-size: 16px;
+        border: none;
+      }
+
+      .hr2{
+
+        width: 200px;
+        height: 0px;
+        font-size: 20px;
+        margin-top: 3px;
+      }
+      @media  screen and (max-width:768px) {
+        .content{
+          width: 600px;
+          height: 600px;
+        }
+        .colum{
+          margin-top: 0px;
+          margin-left: 0px;
+          width: 550px;
+          overflow: hidden;
+        }
+
+        .about{
+          margin-left: 40px;
+        }
+
+        .header{
+          width: 600px;
+          height: 600px;
+        }
+        .img{
+          width: 660px;
+        }
+        .logo{
+          margin-left: 10px;
+          margin-right: 20px;
+
+        }
+
+        .Searchbox{
+          padding: 2.5px 2.5px;
+          margin-left: 20px;
+          width: 200px ;
+          font-size: 10px;
+
+        }
+        .search{
+          font-size: 3px;
+          font-size: 10px;
+        }
+        .para{
+          margin-left: 10px;
+
+        }
+        .btn1{
+          width: 0px;
+          height: 0px;
+          overflow: hidden;
+        }
+        .imagetext{
+        position: absolute;
+        width: 378px;
+        height: 47px;
+        left: 60px;
+        top: 125px;
+        font-family: "IBM Plex Sans";
+        font-style: normal;
+        font-size: 18px;
+        line-height: 20px;
+        color: #ffffff;
+        }
+        .imagetext2{
+        position: absolute;
+        width: 378px;
+        height: 47px;
+        left: 60px;
+        top: 145px;
+        font-family: "IBM Plex Sans";
+        font-style: normal;
+        font-size: 13px;
+        line-height: 20px;
+        color: #ffffff;
+        }
+        .hr1{
+          width: 0px;
+          overflow: hidden;
+          margin-bottom: 0px;
+        }
+        .btn2{
+          position: absolute;
+          top: 2px;
+          background-color: #000000;
+          right: 0px;
+          cursor: pointer;
+        }
+        .about-us{
+          font-size: 0px;
+        }
+        .about-us1{
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="logo">
+        <p><span>ATG.</span>W</p>
+        <p><img src="logoimage.png" alt="" /></p>
+        <p>RLD</p>
+      </div>
+      <div class="search">
+        <input
+          class="Searchbox"
+          type="textbox"
+          placeholder="Search for your favourite groups in ATG "
+        />
+      </div>
+      <div class="free">
+        <p class="para">
+          Create account.
+          <a href="creataccount.html">It's free!</a>
+        </p>
+      </div>
+    </div>
+    <div class="header">
+      <img class="img" src="header.png" alt="" />
+      <p class="imagetext">Computer Engineering</p>
+      <p class="imagetext2">142,765 Computer Engineers follow this</p>
+      <div class="about">
+        <p class="about-us1">All Posts(32)</p>
+        <p class="about-us">Article</p>
+        <p class="about-us">Event</p>
+        <p class="about-us">Education</p>
+        <p class="about-us">Job</p>
+      </div>
+      <div class="post">
+        <button class="btn1">Write a Post</button>
+        <button class="btn2">Join Group</button>
+      </div>
+      <hr  class="hr1"/>
+
+      <div>
+        <div class="colum colum1">
+          <img src="firstimg.png" alt="" />
+          <div class="colum-about">
+            <h3>️✍️ Article</h3>
+            <h5 >What if famous brands had regular fonts? Meet RegulaBrands!</h5>
+            <button class="btn3">
+            </button>
+            <p class="small">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+          </div>
+          <div class="colum-about2">
+            <img class="profile" src="profile1.png" alt="">
+             <p class="profile1">
+              Sarthak Kamra
+             </p>
+             <p class="right-side">
+             <img src="eye.png" alt="">
+             1.4k views
+             </p>
+             <img class="img4" src="share.png" alt="">
+          </div>
+        </div>
+
+        <div class="locationup">
+          <img src="loca.png" alt="">
+          <input class="locationup2"   type="text" placeholder="Enter your location">
+          <hr class="hr2">
+        </div>
+        
+
+
+        <div class="colum">
+          <img src="secondimg.png" alt="" />
+          <div class="colum-about">
+            <h3>🔬️ Education</h3>
+            <h5>Tax Benefits for Investment under National Pension Scheme launched by Government</h5>
+            <button class="btn3">
+            </button>
+            <p class="small">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+          </div>
+          <div class="colum-about2">
+            <img class="profile" src="profile2.png" alt="">
+             <p class="profile1">
+              Sarah West
+             </p>
+             <p class="right-side">
+             <img src="eye.png" alt="">
+             1.4k views
+             </p>
+             <img class="img4" src="share.png" alt="">
+          </div>
+        </div>
+        <div class="colum">
+          <img src="thirdimg.png" alt="" />
+          <div class="colum-about">
+            <h3>🗓️ Meetup</h3>
+            <h5>Finance & Investment Elite Social Mixer @Lujiazui</h5>
+            <button class="btn3">
+            </button>
+            <p class="middle1"> <img class="calender"  src="calender.png" alt=""> Fri, 12 Oct, 2018</p>
+            <p class="middle2"> <img src="loca.png" alt="">Ahmedabad, India</p>
+            <p class="orange">Visit Website</p>
+          </div>
+          <div class="colum-about2">
+            <img class="profile" src="profile3.png" alt="">
+             <p class="profile1">
+              Ronal Jones
+             </p>
+             <p class="right-side">
+             <img src="eye.png" alt="">
+             1.4k views
+             </p>
+             <img class="img4" src="share.png" alt="">
+          </div>
+        </div>
+        <div class="colum colum2">
+          <div class="colum-about">
+            <h3>💼️ Job</h3>
+            <h5>Software Developer</h5>
+            <button class="btn3">
+            </button>
+            <p class="middle1"><img  src="bad.png" alt=""> Innovaccer Analytics Private Ltd.</p>
+            <p class="middle2"> <img src="loca.png" alt=""> Noida, India</p> 
+            <p class="green">Apply on Timesjobs</p>
+
+          </div>
+          <div class="colum-about2">
+            <img class="profile" src="profile4.png" alt="">
+             <p class="profile1">
+              Joseph Gray
+             </p>
+             <p class="right-side">
+             <img src="eye.png" alt="">
+             1.4k views
+             </p>
+             <img class="img4" src="share.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
